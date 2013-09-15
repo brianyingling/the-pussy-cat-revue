@@ -5,5 +5,5 @@ require 'active_support/all'
 
 
 get '/' do
-  "Hello World"
+  erb: index
 end
