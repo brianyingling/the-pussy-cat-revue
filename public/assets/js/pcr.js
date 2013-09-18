@@ -10,18 +10,8 @@ $(document).ready(function() {
     console.log($location);
     $slide = $('#slide'+$location);
     console.log($slide);
-    $.scrollTo( $slide, 1000, {offset: -200});
+    $.scrollTo( $slide, 800, {offset: -200});
   });
-
-
-  // personal wrapper for the jQuery scrollin plugin
-  var scrollTo = function(selector) {
-    $.scrollTo(selector, duration);
-  }
-
-
-
-
 
 
 
