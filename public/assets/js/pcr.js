@@ -10,7 +10,7 @@ $(document).ready(function() {
     console.log($location);
     $slide = $('#slide'+$location);
     console.log($slide);
-    $.scrollTo( $slide, 1000, {offset: -250});
+    $.scrollTo( $slide, 1000, {offset: -200});
   });
 
 
