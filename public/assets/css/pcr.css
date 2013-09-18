@@ -40,8 +40,8 @@
 
 /* line 47, ../../../sass/pcr.scss */
 .menu {
-  width: 100%;
   position: fixed;
+  width: 100%;
   top: 600px;
   margin: 0 auto;
   text-align: center;
@@ -58,8 +58,12 @@
   color: white;
   font-family: Broadway;
 }
+/* line 64, ../../../sass/pcr.scss */
+.menu .item:hover {
+  cursor: pointer;
+}
 
-/* line 71, ../../../sass/pcr.scss */
+/* line 75, ../../../sass/pcr.scss */
 #slide1 .sign {
   position: relative;
   top: 250px;
@@ -73,32 +77,32 @@
   background-color: purple;
   box-shadow: 5px 5px 400px lightyellow;
 }
-/* line 87, ../../../sass/pcr.scss */
+/* line 91, ../../../sass/pcr.scss */
 #slide1 .sign h1 {
   font-family: Broadway;
   font-size: 2.5em;
   text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #ff00de, 0 0 7px #ff00de, 0 0 8px #ff00de, 0 0 10px #ff00de, 0 0 15px #ff00de;
 }
 
-/* line 104, ../../../sass/pcr.scss */
+/* line 108, ../../../sass/pcr.scss */
 #slide2 {
   position: relative;
   color: #fff;
 }
 
-/* line 109, ../../../sass/pcr.scss */
+/* line 113, ../../../sass/pcr.scss */
 #slide3 {
   position: relative;
   color: #fff;
 }
 
-/* line 114, ../../../sass/pcr.scss */
+/* line 118, ../../../sass/pcr.scss */
 #slide4 {
   position: relative;
   color: #fff;
 }
 
-/* line 119, ../../../sass/pcr.scss */
+/* line 123, ../../../sass/pcr.scss */
 #slide5 {
   position: relative;
   color: #fff;

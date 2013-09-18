@@ -45,8 +45,8 @@ $blue: rgb(70,75,253);
   }
 }
   .menu {
-    width: 100%;
     position: fixed;
+    width: 100%;
     top: 600px;
     margin: 0 auto;
     text-align: center;
@@ -61,7 +61,11 @@ $blue: rgb(70,75,253);
       margin: 0 25px;
       color: white;
       font-family: Broadway;
+      &:hover {
+        cursor: pointer;
+      }
     }
+
   }
 
 // Slide #1
