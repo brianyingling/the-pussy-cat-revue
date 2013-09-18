@@ -1,0 +1,36 @@
+/* Used to store media queries */
+
+
+// Remove background if the screen isn't large enough to accomdate the screen
+@media only screen and (max-width: 1028px) {
+  .container {
+    background-image: none;
+  }
+
+  // lower the margins in between menu items
+  .menu {
+    .item {
+      margin: 0 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 876px) {
+  .menu {
+
+    // lower the margins and the font-size
+    .item {
+      margin: 0 5px;
+      font-size: 0.875em;
+    }
+  }
+}
+
+@media only screen and (max-width: 436px) {
+  #slide1 {
+    .sign {
+      width: 350px;
+    }
+  }
+}
+

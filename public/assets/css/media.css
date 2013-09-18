@@ -1,0 +1,25 @@
+/* Used to store media queries */
+@media only screen and (max-width: 1028px) {
+  /* line 6, ../../../sass/media.scss */
+  .container {
+    background-image: none;
+  }
+
+  /* line 12, ../../../sass/media.scss */
+  .menu .item {
+    margin: 0 10px;
+  }
+}
+@media only screen and (max-width: 876px) {
+  /* line 22, ../../../sass/media.scss */
+  .menu .item {
+    margin: 0 5px;
+    font-size: 0.875em;
+  }
+}
+@media only screen and (max-width: 436px) {
+  /* line 31, ../../../sass/media.scss */
+  #slide1 .sign {
+    width: 350px;
+  }
+}

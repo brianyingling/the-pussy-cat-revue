@@ -1,0 +1,105 @@
+@font-face {
+  font-family: Broadway;
+  src: url(../fonts/broadway.ttf);
+}
+
+/* line 12, ../../../sass/pcr.scss */
+.container {
+  position: relative;
+  background-image: url("../images/curtains.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* line 14, ../../../sass/pcr.scss */
+.container a {
+  text-decoration: none;
+  color: #FFF;
+}
+/* line 25, ../../../sass/pcr.scss */
+.container .slide {
+  position: relative;
+  width: 100%;
+  height: 880px;
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+  z-index: -1;
+}
+/* line 34, ../../../sass/pcr.scss */
+.container .slide .content {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  background-color: green;
+}
+/* line 41, ../../../sass/pcr.scss */
+.container .slide h2 {
+  font-family: Broadway;
+}
+
+/* line 47, ../../../sass/pcr.scss */
+.menu {
+  width: 100%;
+  position: fixed;
+  top: 600px;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 55, ../../../sass/pcr.scss */
+.menu .item {
+  display: inline-block;
+  background-color: purple;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 15px;
+  margin: 0 25px;
+  color: white;
+  font-family: Broadway;
+}
+
+/* line 71, ../../../sass/pcr.scss */
+#slide1 .sign {
+  position: relative;
+  top: 250px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 35px;
+  border-width: 1px;
+  border-color: lightyellow;
+  background-color: purple;
+  box-shadow: 5px 5px 400px lightyellow;
+}
+/* line 87, ../../../sass/pcr.scss */
+#slide1 .sign h1 {
+  font-family: Broadway;
+  font-size: 2.5em;
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #ff00de, 0 0 7px #ff00de, 0 0 8px #ff00de, 0 0 10px #ff00de, 0 0 15px #ff00de;
+}
+
+/* line 104, ../../../sass/pcr.scss */
+#slide2 {
+  position: relative;
+  color: #fff;
+}
+
+/* line 109, ../../../sass/pcr.scss */
+#slide3 {
+  position: relative;
+  color: #fff;
+}
+
+/* line 114, ../../../sass/pcr.scss */
+#slide4 {
+  position: relative;
+  color: #fff;
+}
+
+/* line 119, ../../../sass/pcr.scss */
+#slide5 {
+  position: relative;
+  color: #fff;
+}
