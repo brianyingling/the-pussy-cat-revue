@@ -34,7 +34,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   #slide1 {
     .sign {
       position: absolute;
@@ -57,8 +57,14 @@
       margin: 0;
     }
   }
+}
 
+// postive layer - puts the z-index positive. Used for slides
+.poslayer {
+  z-index: 1;
+}
 
-
+.neglayer {
+  z-index: -1;
 }
 

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>The Pussy Cat Review</title>
+    <title>The Pussycat Revue</title>
     <link rel="stylesheet" href="/vendor/foundation/foundation.min.css">
     <link rel="stylesheet" href="/assets/css/pcr.css">
     <link rel="stylesheet" href="/assets/css/media.css">
@@ -9,6 +9,8 @@
 
     <script src='/vendor/foundation/foundation.min.js'></script>
     <script src="/vendor/jquery/jquery.scrollTo.js"></script>
+    <script src='/vendor/jquery/jquery.serialScroll-1.2.2-min.js'></script>
+    <script src='/vendor/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1.js'></script>
     <script src='/assets/js/pcr.js'></script>
 
 
@@ -24,7 +26,12 @@
           </div>
         </div>
         <div class="row">
-
+          <div class="subtitle">
+            <div class="large-12 small-12 columns">
+              <h2>Classic Variety, Burlesque, and
+                Swing for the Modern Era</h2>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -32,8 +39,8 @@
       <div id="slide2" class='slide'>
         <div class="row">
           <div class="large-12 small-12 columns">
-            <a name='whatisthepussycatreview'>
-              <h2>What is the Pussycat Review?</h2>
+            <a name='whatisthepussycatrevue'>
+              <h2>What is the Pussycat Revue?</h2>
             </a>
           </div>
         </div>
@@ -49,73 +56,66 @@
         </div>
         </div>
 
+        <!-- #slide #3 -->
+        <div id="slide3" class='slide gallery' data-serial-scroll='0'>
+          <h2>Gallery</h2>
+          <div id="gallery" class='orbit-container'>
+            <div id="buttons">
+              <a href="#" id="prev">prev | </a>
+              <a href="#" id="next">next</a>
+            </div>
+            <div class="clear"></div>
+            <div id="slides">
+              <ul>
+                <li class="gallery_slide">
+                  <!-- Gallery Slide #1 -->
+                   <div id='g_slide3a' class="slide">
+                    <div class="row">
+                      <div class="large-4 small-4 columns">
+                        <img src="/assets/images/gypsy-rose-lee.jpg" alt="" width='338' height='450' align='left'>
+                      </div>
+                      <div class="large-8 small-8 columns">
+                        <h2>Gypsy Rose Lee</h2>
+                        <p>
+                          Gypsy Rose Lee if a name that most people know. She was the most famous stripper of all time, and a star of the Minsky Stage. If you can find a good clip of her doing an actual strip-tease let me know.</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
 
-      <!-- #slide #3 -->
-      <div id="slide3" class='slide'>
-        <div class="row">
-          <div class="large-12 small-12 columns">
-            <h2>Gallery</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-12 small-12 columns">
-            <p>
-              Since we don’t have a show of our own yet here is a few images and clips that have served as inspiration for <em>The Pussycat Revue</em>, and are representative of the types of acts which will be presented.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-12 small-12 columns">
-            <button class="button">
-            Click to Start the Show!</button>
-          </div>
-        </div>
-        </div>
+                <!-- Gallery Slide #2 -->
+                <li class="gallery_slide">
+                  <div id="g_slide3b" class="slide">
+                    <div class="row">
+                      <div class="large-4 small-4 columns">
+                        <img src="/assets/images/billykinskysburlesque.jpeg" alt="Billy Kinsky's Burlesque">
+                      </div>
+                      <div class="large-8 small-8 columns">
+                        <h2>Billy Kinsky's Burlesque</h2>
+                        <p>Minsky was one of the most famous names in burlesque. The Republic on 42nd St. was their flagship location. For the first time burlesque was featured side-by-side with Broadway shows. Today Minsky’s Republic is the New Victory Theater which is New York City’s largest theater for children and families. A burlesque show from that era was on the scale of a Broadway show unlike the small cabaret shows of today. The goal of <em>The Pussycat Revue</em> is to bring back burlesque and variety to the glory days of yesteryear.</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="gallery_slide">
+                  <div id="g_slide3c" class="slide">
+                    <div class="row">
+                       <div class="large-12 small-12 columns">
+                        <!--
+                        <iframe class='youtube-player' type='text/html' width='300' height='200' src="http://www.youtube.com/embed/4ycLNhGgx1Q?html5=1" frameborder="0"></iframe>
+                      -->
 
-      <!-- slide #4 -->
-      <div id="slide4" class='slide'>
-        <div class="row">
-          <div class="large-4 small-4 columns">
-            <img src="../assets/images/billykinskysburlesque.jpeg" alt="Billy Kinsky Burlesque">
-          </div>
-          <div class="large-8 small-8 columns">
-            <h2>Billy Minsky</h2>
-            <p>
-            Minsky was one of the most famous names in burlesque. The Republic on 42nd St. was their flagship location. For the first time burlesque was featured side-by-side with Broadway shows. Today Minsky’s Republic is the New Victory Theater which is New York City’s largest theater for children and families. A burlesque show from that era was on the scale of a Broadway show unlike the small cabaret shows of today. The goal of The Pussy Cat Revue is to bring back burlesque and variety to the glory days of yesteryear.</p>
+                      </div>
+                    </div>
+                  </div>
 
+
+                </li>
+                <li class="gallery_slide">Hello 4</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- slide #5 -->
-      <div id="slide5" class='slide'>
-        <div class="row">
-          <div class="large-4 small-4 columns">
-            <img src="../assets/images/gypsieroselee.jpg" alt="Gypsie Rose Lee">
-          </div>
-          <div class="large-8 small-8 columns">
-            <h2>Gypsie Rose Lee</h2>
-            <p>
-              Gypsy Rose Lee is a name that most people know. She was the most famous stripper of all time, and a star of the Minsky Stage. If you can find a good clip of her doing an actual strip-tease let me know.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- slide #6 -->
-      <div id="slide6" class='slide'>
-        <div class="row">
-          <div class="large-4 small-4 columns">
-            <img src="../assets/images/gypsieroselee.jpg" alt="Gypsie Rose Lee">
-          </div>
-          <div class="large-8 small-8 columns">
-            <h2>Gypsie Rose Lee</h2>
-            <p>
-              Gypsy Rose Lee if a name that most people know. She was the most famous stripper of all time, and a star of the Minsky Stage. If you can find a good clip of her doing an actual strip-tease let me know.
-            </p>
-          </div>
-        </div>
-      </div>
-
 
       <!-- slide -- investor info. -->
       <div id="slide7" class='slide'>
@@ -139,7 +139,7 @@
       <!-- slide -- investor info. -->
       <div id="slide8" class='slide'>
         <div class="row">
-          <h2>Contact Me</h2>
+          <h2>Contact</h2>
         </div>
         <div class="row">
           <p>nick810@gmail.com</p>
@@ -154,7 +154,7 @@
         <div class="item" data-slide='2'><a href="#slide1">What is The Pussycat Revue?</a></div>
         <div class="item" data-slide='3'>Gallery</div>
         <div class="item" data-slide='7'>Investor Information</div>
-        <div class="item" data-slide='8'>Contact Us</div>
+        <div class="item" data-slide='8'>Contact</div>
       </div>
 
 

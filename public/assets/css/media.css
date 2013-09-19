@@ -23,7 +23,7 @@
     width: 350px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   /* line 39, ../../../sass/media.scss */
   #slide1 .sign {
     position: absolute;
@@ -46,4 +46,13 @@
     width: 100%;
     margin: 0;
   }
+}
+/* line 63, ../../../sass/media.scss */
+.poslayer {
+  z-index: 1;
+}
+
+/* line 67, ../../../sass/media.scss */
+.neglayer {
+  z-index: -1;
 }
