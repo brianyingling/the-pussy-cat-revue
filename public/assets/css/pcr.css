@@ -3,7 +3,7 @@
   src: url(../fonts/broadway.ttf);
 }
 
-/* line 14, ../../../sass/pcr.scss */
+/* line 13, ../../../sass/pcr.scss */
 .container {
   position: relative;
   background-image: url("../images/curtains.png");
@@ -12,14 +12,34 @@
   background-attachment: fixed;
   background-position: 0 -100px;
 }
-/* line 16, ../../../sass/pcr.scss */
+/* line 14, ../../../sass/pcr.scss */
 .container a {
   text-decoration: none;
   color: #FFF;
+  position: relative;
+  z-index: 10 !important;
+  display: block;
 }
-/* line 28, ../../../sass/pcr.scss */
+/* line 22, ../../../sass/pcr.scss */
+.container .curtains {
+  position: absolute;
+  top: 0;
+}
+/* line 25, ../../../sass/pcr.scss */
+.container .curtains #curtains_top {
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+/* line 30, ../../../sass/pcr.scss */
+.container .curtains #curtains_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+}
+/* line 45, ../../../sass/pcr.scss */
 .container .slide {
-  pointer-events: none;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -28,52 +48,20 @@
   color: #FFF;
   text-align: center;
   z-index: -1;
-  pointer-events: none;
 }
-/* line 40, ../../../sass/pcr.scss */
+/* line 55, ../../../sass/pcr.scss */
 .container .slide .content {
   position: relative;
   width: 800px;
   margin: 0 auto;
   background-color: green;
 }
-/* line 47, ../../../sass/pcr.scss */
+/* line 62, ../../../sass/pcr.scss */
 .container .slide h2 {
   font-family: Broadway;
 }
-/* line 50, ../../../sass/pcr.scss */
-.container .slide #gallery-start-button {
-  position: relative;
-  width: 100px;
-  z-index: 99;
-}
 
-/* line 58, ../../../sass/pcr.scss */
-.menu {
-  position: fixed;
-  width: 100%;
-  top: 600px;
-  margin: 0 auto;
-  text-align: center;
-  vertical-align: middle;
-}
-/* line 66, ../../../sass/pcr.scss */
-.menu .item {
-  display: inline-block;
-  background-color: purple;
-  border-radius: 3px;
-  border: 1px solid black;
-  padding: 15px;
-  margin: 0 25px;
-  color: white;
-  font-family: Broadway;
-}
 /* line 75, ../../../sass/pcr.scss */
-.menu .item:hover {
-  cursor: pointer;
-}
-
-/* line 86, ../../../sass/pcr.scss */
 #slide1 .sign {
   position: relative;
   top: 250px;
@@ -87,61 +75,65 @@
   background-color: purple;
   box-shadow: 5px 5px 400px lightyellow;
 }
-/* line 102, ../../../sass/pcr.scss */
+/* line 91, ../../../sass/pcr.scss */
 #slide1 .sign h1 {
   font-family: Broadway;
   font-size: 2.5em;
   text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #ff00de, 0 0 7px #ff00de, 0 0 8px #ff00de, 0 0 10px #ff00de, 0 0 15px #ff00de;
 }
-/* line 115, ../../../sass/pcr.scss */
+/* line 104, ../../../sass/pcr.scss */
 #slide1 .subtitle {
   position: relative;
   top: 325px;
 }
 
-/* line 123, ../../../sass/pcr.scss */
+/* line 112, ../../../sass/pcr.scss */
 #slide2 {
   position: relative;
   color: #fff;
 }
 
-/* line 128, ../../../sass/pcr.scss */
+/* line 117, ../../../sass/pcr.scss */
 #slide3 {
   position: relative;
   color: #fff;
   text-align: center;
   overflow: hidden;
 }
-/* line 133, ../../../sass/pcr.scss */
+/* line 122, ../../../sass/pcr.scss */
 #slide3 h2 {
   margin-bottom: 0;
 }
 
-/* line 138, ../../../sass/pcr.scss */
+/* line 127, ../../../sass/pcr.scss */
 #slide4 {
   position: relative;
   color: #fff;
 }
 
-/* line 143, ../../../sass/pcr.scss */
+/* line 132, ../../../sass/pcr.scss */
 #slide5 {
   position: relative;
   color: #fff;
 }
 
-/* line 148, ../../../sass/pcr.scss */
+/* line 137, ../../../sass/pcr.scss */
 #gallery {
   overflow: hidden;
   width: 100%;
   text-align: center;
 }
-/* line 153, ../../../sass/pcr.scss */
+/* line 142, ../../../sass/pcr.scss */
 #gallery #buttons {
   position: relative;
   left: 350px;
   margin-bottom: 5px;
 }
-/* line 159, ../../../sass/pcr.scss */
+/* line 146, ../../../sass/pcr.scss */
+#gallery #buttons a {
+  display: inline-block;
+}
+/* line 151, ../../../sass/pcr.scss */
 #gallery #slides {
   overflow: hidden;
   position: relative;
@@ -151,7 +143,7 @@
   box-shadow: 2px 2px #ececec;
   margin: 0 auto;
 }
-/* line 168, ../../../sass/pcr.scss */
+/* line 160, ../../../sass/pcr.scss */
 #gallery ul {
   position: relative;
   left: 0;
@@ -161,26 +153,26 @@
   padding: 0;
   width: 2700px;
 }
-/* line 177, ../../../sass/pcr.scss */
+/* line 169, ../../../sass/pcr.scss */
 #gallery ul li {
   width: 900px;
   height: 500px;
   float: left;
   color: white;
 }
-/* line 184, ../../../sass/pcr.scss */
+/* line 176, ../../../sass/pcr.scss */
 #gallery ul li h2 {
   position: relative;
   right: 0;
   margin: 25px;
 }
-/* line 192, ../../../sass/pcr.scss */
+/* line 184, ../../../sass/pcr.scss */
 #gallery ul li img {
   border: 1px solid #FFF;
   margin: 5px;
   opacity: 1;
 }
-/* line 198, ../../../sass/pcr.scss */
+/* line 190, ../../../sass/pcr.scss */
 #gallery ul li #g_slide3a {
   background-image: url(../images/GypsyRoseLeeMemphis1949.jpg);
   background-repeat: no-repeat;
@@ -188,14 +180,14 @@
   opacity: 0.9;
   filter: alpha(opacity=70);
 }
-/* line 206, ../../../sass/pcr.scss */
+/* line 198, ../../../sass/pcr.scss */
 #gallery ul li #g_slide3b {
   background-image: url(../images/MinskyBurlesque.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
 }
-/* line 213, ../../../sass/pcr.scss */
+/* line 205, ../../../sass/pcr.scss */
 #gallery ul li #g_slide3c {
   background-image: url(../images/ZiegfeldMidnightFrolic.jpg);
   background-repeat: no-repeat;
@@ -203,9 +195,34 @@
   background-position: 150px -300px;
   opacity: 0.9;
 }
-/* line 222, ../../../sass/pcr.scss */
+/* line 214, ../../../sass/pcr.scss */
 #gallery ul li #g_slide3d {
   background-image: url(../images/palace-theatre-new-york111.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* line 239, ../../../sass/pcr.scss */
+.menu {
+  position: fixed;
+  width: 100%;
+  top: 600px;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 247, ../../../sass/pcr.scss */
+.menu .item {
+  display: inline-block;
+  background-color: purple;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 15px;
+  margin: 0 25px;
+  color: white;
+  font-family: Broadway;
+}
+/* line 256, ../../../sass/pcr.scss */
+.menu .item:hover {
+  cursor: pointer;
 }

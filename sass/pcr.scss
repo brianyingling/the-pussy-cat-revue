@@ -10,12 +10,29 @@ $blue: rgb(70,75,253);
 }
 
 
-
 .container {
-
   a {
     text-decoration: none;
     color: #FFF;
+    position: relative;
+    z-index: 10 !important;
+    display: block;
+  }
+
+  .curtains {
+    position: absolute;
+    top: 0;
+    #curtains_top {
+      left: 0;
+      width: 100%;
+      z-index: 10;
+    }
+    #curtains_right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 9;
+    }
   }
 
   position: relative;
@@ -26,7 +43,6 @@ $blue: rgb(70,75,253);
   background-position: 0 -100px;
 
   .slide {
-    pointer-events: none;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -35,7 +51,6 @@ $blue: rgb(70,75,253);
     color: #FFF;
     text-align: center;
     z-index: -1;
-    pointer-events: none;
 
     .content {
       position: relative;
@@ -47,37 +62,11 @@ $blue: rgb(70,75,253);
     h2 {
       font-family: Broadway;
     }
-    #gallery-start-button {
-      position: relative;
-      width: 100px;
-      z-index: 99;
-    }
+
   }
 
 }
-  .menu {
-    position: fixed;
-    width: 100%;
-    top: 600px;
-    margin: 0 auto;
-    text-align: center;
-    vertical-align: middle;
 
-    .item {
-      display: inline-block;
-      background-color: purple;
-      border-radius: 3px;
-      border:1px solid black;
-      padding: 15px;
-      margin: 0 25px;
-      color: white;
-      font-family: Broadway;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-
-  }
 
 // Slide #1
 #slide1 {
@@ -154,6 +143,9 @@ $blue: rgb(70,75,253);
     position: relative;
     left: 350px;
     margin-bottom: 5px;
+    a {
+      display: inline-block;
+    }
   }
 
   #slides {
@@ -244,4 +236,25 @@ $blue: rgb(70,75,253);
 
 }
 
+.menu {
+    position: fixed;
+    width: 100%;
+    top: 600px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
 
+    .item {
+      display: inline-block;
+      background-color: purple;
+      border-radius: 3px;
+      border:1px solid black;
+      padding: 15px;
+      margin: 0 25px;
+      color: white;
+      font-family: Broadway;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }

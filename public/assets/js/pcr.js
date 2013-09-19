@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   // rotation speed and timer
   var speed = 5000;
-  var run = setInterval('rotate()', speed);
+  var run = setInterval(rotate, speed);
 
   // grab the width and calculate left value
   var item_width = $('#slides li').outerWidth();
@@ -37,7 +37,8 @@ $(document).ready(function() {
 
   // if user clicked on next button
   $('#next').click(function() {
-    console.log('next is clicked');
+    console.log('clicking next...');
+
     // get the right position
     var left_indent = parseInt($('#slides ul').css('left')) - item_width;
 
@@ -63,7 +64,7 @@ $(document).ready(function() {
         clearInterval(run);
     },
     function() {
-        run = setInterval('rotate()', speed);
+        run = setInterval(rotate, speed);
     }
   );
 
@@ -84,29 +85,36 @@ $(document).ready(function() {
   $('#gallery-start-button').click(function(e) {
     e.preventDefault();
     console.log(this);
-    debugger;
   });
+
 
   // Because the z-index of the slides is -1, normal event operations aren't getting
   // to the button. So we capture the coords of the button and use that to trigger
   // a click event.
   $(document).click(function(e) {
     e.preventDefault();
+
     var x = e.clientX,
         y = e.clientY,
-        buttonCoords = $('#gallery-start-button')[0].getBoundingClientRect();
+        prevCoords = $('#prev')[0].getBoundingClientRect(),
+        nextCoords = $('#next')[0].getBoundingClientRect();
 
-    if ((x >= buttonCoords.left && x <= buttonCoords.right) &&
-        (y >= buttonCoords.top && y <= buttonCoords.bottom)) {
-      $('#gallery-start-button').trigger('click');
 
+    if ((x >= prevCoords.left && x <= prevCoords.right) &&
+        (y >= prevCoords.top && y <= prevCoords.bottom)) {
+      $('#prev').trigger('click');
+    }
+    else if ((x >= nextCoords.left && x <= nextCoords.right) &&
+            (y >= nextCoords.top && y<= nextCoords.right)) {
+      $('#next').trigger('click');
     }
   });
 });
 
+
 // a simple function to click next link
 // a timer will call this function and the rotation
 // will begin
-function rotate() {
-  $('#next').click();
-}
+var rotate = function rotate() {
+  $('#next').trigger('click');
+};
