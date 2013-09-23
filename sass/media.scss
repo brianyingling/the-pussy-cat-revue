@@ -2,7 +2,7 @@
 
 
 // Remove background if the screen isn't large enough to accomdate the screen
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1023px) {
   .container {
     background-image: none;
   }

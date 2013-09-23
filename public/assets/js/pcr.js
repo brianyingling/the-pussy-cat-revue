@@ -103,10 +103,18 @@ $(document).ready(function() {
     if ((x >= prevCoords.left && x <= prevCoords.right) &&
         (y >= prevCoords.top && y <= prevCoords.bottom)) {
       $('#prev').trigger('click');
+      // restart the timer
+      clearInterval(run);
+      run = setInterval(rotate, speed);
     }
     else if ((x >= nextCoords.left && x <= nextCoords.right) &&
             (y >= nextCoords.top && y<= nextCoords.right)) {
       $('#next').trigger('click');
+
+      // restart the timer
+      clearInterval(run);
+      run = setInterval(rotate, speed);
+
     }
   });
 });

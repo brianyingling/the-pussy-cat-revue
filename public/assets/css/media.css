@@ -1,5 +1,5 @@
 /* Used to store media queries */
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1023px) {
   /* line 6, ../../../sass/media.scss */
   .container {
     background-image: none;
