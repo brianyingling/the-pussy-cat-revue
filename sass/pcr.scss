@@ -22,14 +22,64 @@ $blue: rgb(70,75,253);
     background-color: transparent;
     min-height: 1000px;
 
+    .slide {
+      position: relative;
+      margin: 3% auto;
+      background: rgba(128,0,128,0.5);
+      min-height: 600px;
+      border-radius: 25px;
+      h1 {
+        position: relative;
+        margin-top: 75px;
+        text-align: center;
+      }
+    }
 
-  .slide {
-    position: relative;
-    margin: 3% auto;
-    background: rgba(255,255,255,0.7);
-    min-height: 600px;
-    border-radius: 5px;
+    .sign {
+      position: relative;
+      width: 400px;
+      margin: 0 auto;
+      margin-top: 25px;
+      text-align: center;
+      border: 1px solid #fff;
+      border-radius: 35px;
+      border-width: 1px;
+      border-color: lightyellow;
+      background-color: purple;
+
+      // box shadow
+      box-shadow: 5px 5px 400px lightyellow;
+
+      // sign text
+      h1 {
+        font-family: Broadway;
+        font-size: 2.5em;
+        text-shadow:  0 0 1px #fff,
+                      0 0 2px #fff,
+                      0 0 3px #fff,
+                      0 0 4px #ff00de,
+                      0 0 7px #ff00de,
+                      0 0 8px #ff00de,
+                      0 0 10px #ff00de,
+                      0 0 15px #ff00de;
+      }
+    }
+    .email_form {
+      position: relative;
+      top: 75px;
+      width: 800px;
+      min-height: 500px;
+      margin: 10px auto;
+      text-align: center;
+      vertical-align: middle;
+      form {
+        input {
+          font-size: 12px;
+          width: 500px;
+          border-radius: 5px;
+        }
+      }
+    }
   }
-}
 
 }
