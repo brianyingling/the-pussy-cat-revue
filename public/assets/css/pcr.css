@@ -14,7 +14,7 @@
 }
 /* line 21, ../../../sass/pcr.scss */
 .container .content {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.7);
   min-height: 1000px;
 }
 /* line 25, ../../../sass/pcr.scss */
@@ -22,16 +22,18 @@
   position: relative;
   margin: 3% auto;
   background: rgba(128, 0, 128, 0.5);
-  min-height: 600px;
+  min-height: 300px;
+  border: 5px solid purple;
   border-radius: 25px;
 }
-/* line 31, ../../../sass/pcr.scss */
+/* line 33, ../../../sass/pcr.scss */
 .container .content .slide h1 {
   position: relative;
   margin-top: 75px;
   text-align: center;
+  color: #fff;
 }
-/* line 38, ../../../sass/pcr.scss */
+/* line 41, ../../../sass/pcr.scss */
 .container .content .sign {
   position: relative;
   width: 400px;
@@ -45,25 +47,36 @@
   background-color: purple;
   box-shadow: 5px 5px 400px lightyellow;
 }
-/* line 54, ../../../sass/pcr.scss */
+/* line 57, ../../../sass/pcr.scss */
 .container .content .sign h1 {
   font-family: Broadway;
   font-size: 2.5em;
   text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #ff00de, 0 0 7px #ff00de, 0 0 8px #ff00de, 0 0 10px #ff00de, 0 0 15px #ff00de;
 }
-/* line 67, ../../../sass/pcr.scss */
+/* line 70, ../../../sass/pcr.scss */
 .container .content .email_form {
   position: relative;
   top: 75px;
   width: 800px;
-  min-height: 500px;
+  min-height: 200px;
   margin: 10px auto;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
 }
-/* line 76, ../../../sass/pcr.scss */
+/* line 79, ../../../sass/pcr.scss */
 .container .content .email_form form input {
-  font-size: 12px;
+  font-size: 18px;
   width: 500px;
+  height: 35px;
   border-radius: 5px;
+  margin: 0 5px;
+}
+/* line 86, ../../../sass/pcr.scss */
+.container .content .email_form form button {
+  vertical-align: top;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: orange;
+  border: 0;
 }
