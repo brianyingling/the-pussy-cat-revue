@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   // rotation speed and timer
-  var speed = 5000;
+  var speed = 10000;
   var run = setInterval(rotate, speed);
 
   // grab the width and calculate left value
