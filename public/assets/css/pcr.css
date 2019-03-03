@@ -23,6 +23,7 @@
 /* line 20, ../../../sass/pcr.scss */
 .container a:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 /* line 25, ../../../sass/pcr.scss */
 .container .curtains {
@@ -141,7 +142,13 @@
 /* line 153, ../../../sass/pcr.scss */
 #gallery #buttons a {
   display: inline-block;
+  cursor: pointer;
 }
+
+#gallery #buttons a:hover {
+  cursor: pointer;
+}
+
 /* line 158, ../../../sass/pcr.scss */
 #gallery #slides {
   overflow: hidden;
@@ -210,6 +217,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#gallery ul li #g_slide3e {
+  background-image: url(../images/harryhoudini.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#gallery ul li #g_slide3f {
+  background-image: url(../images/Bojangles.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 
 /* line 246, ../../../sass/pcr.scss */
 .menu {

@@ -119,6 +119,10 @@ $(document).ready(function() {
   });
 });
 
+$('a').hover(function() {
+  console.log('hovering...');
+});
+
 
 // a simple function to click next link
 // a timer will call this function and the rotation
